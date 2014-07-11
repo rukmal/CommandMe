@@ -10,7 +10,7 @@ git stash
 git checkout gh-pages
 
 # Grabbing new docs from the stash, and putting them in the 'docs' folder
-git checkout stash@{0} -- docs/* docs
+git checkout stash@{0} -- docs
 
 # Committing changes to git
 git commit -am "Update docs"
