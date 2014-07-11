@@ -32,3 +32,9 @@ git checkout master
 
 # Re-applying changes
 git stash apply
+
+# Removing docs folder
+rm -r docs
+
+# Dropping old stash
+git stash --drop
