@@ -12,3 +12,6 @@ public class Main {
     }
 }
 ```
+
+|Click [here](http://rukmal.github.io/CommandMe) for documentation|
+| ---- |
