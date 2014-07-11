@@ -1,7 +1,5 @@
 package me.rukmal.commandme;
 
-import java.util.Arrays;
-
 /**
  * Class to handle command line arguments
  *
