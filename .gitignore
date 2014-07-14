@@ -3,3 +3,6 @@
 
 # Ignoring IntelliJ project files
 .idea/*
+
+# Ignoring all other IntelliJ files
+*.iml
