@@ -37,4 +37,4 @@ git stash apply
 rm -r docs
 
 # Dropping old stash
-git stash --drop
+git stash drop
