@@ -15,6 +15,7 @@ import java.lang.Exception;
  */
 public class CommandSetter {
 	private List<Map<String, String>> args;
+	private String description;
 
 	/**
 	 * Constructor to instantiate a new CommandSetter object
@@ -51,5 +52,13 @@ public class CommandSetter {
 	 */
 	public void setOption(String shortOption, String description) throws IllegalArgumentException {
 		setOption(shortOption, null, description);
+	}
+
+	/**
+	 * Function to set the long description of the cli tool
+	 * @param	description	Long description of the cli tool
+	 */
+	public void setDescription(String description) {
+		this.description = description;
 	}
 }
