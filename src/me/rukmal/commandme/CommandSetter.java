@@ -42,4 +42,14 @@ public class CommandSetter {
 		}
 		args.add(newArg);
 	}
+
+	/**
+	 * Function to add a new option to the cli tool
+	 * @param	shortOption					Short option (eg: 'e' or 'f')
+	 * @param	description					Short description of the option (eg: Using f searches for the file)
+	 * @throws	IllegalArgumentException	Thrown if the option has already been added
+	 */
+	public void setOption(String shortOption, String description) throws IllegalArgumentException {
+		setOption(shortOption, null, description);
+	}
 }

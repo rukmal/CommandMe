@@ -20,9 +20,21 @@ public class CommandSetterTest {
 	 * Test to check whether a command can be added using the command setter
 	 */
 	@Test
-	public void testAddingCommand() {
+	public void testAddingLongCommand() {
 		try {
 			testcmd.setOption("f", "find", "Find a file");
+		} catch (Exception e) {
+			Assert.fail();
+		}
+	}
+
+	/**
+	 * Test to check whether a short command can be added
+	 */
+	@Test
+	public void testAddingShortCommand() {
+		try {
+			testcmd.setOption("z", "find", "Find a file");
 		} catch (Exception e) {
 			Assert.fail();
 		}
