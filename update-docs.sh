@@ -10,7 +10,7 @@ git stash
 git checkout gh-pages
 
 # Grabbing new docs from the stash, and putting them in the 'docs' folder
-git checkout stash@{0} -- src/
+git checkout master -- src/
 
 # Changing directories
 cd src
@@ -19,7 +19,8 @@ cd src
 javadoc -d ../docs me.rukmal.commandme CommandMe
 
 # Deleting source files
-cd .. && rm -r src
+cd ..
+rm -r src
 
 # Committing changes to git
 git commit -am "Update docs"
@@ -29,12 +30,3 @@ git push origin gh-pages
 
 # Checking out master
 git checkout master
-
-# Re-applying changes
-git stash apply
-
-# Removing docs folder
-rm -r docs
-
-# Dropping old stash
-git stash drop

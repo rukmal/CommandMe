@@ -16,6 +16,14 @@ import java.lang.Exception;
 public class CommandSetter {
 	private List<Map<String, String>> args;
 	private String description;
+	private String name;
+	private String synopsis;
+	private String exitStatus;
+	private String seeAlso;
+	private String standards;
+	private String history;
+	private String license;
+	private String creationDate;
 
 	/**
 	 * Constructor to instantiate a new CommandSetter object
@@ -60,5 +68,30 @@ public class CommandSetter {
 	 */
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	/**
+	 * Function to add the metadata of the cli to the Command object
+	 * Note: All of the arguments are optional. 'null' should be passed
+	 * in place of the argument if it is to be kept blank
+	 * @param	description		Long description of the cli tool
+	 * @param	name			Name and short description of the cli tool
+	 * @param	synopsis		Synopsis usage of the cli tool (eg: ls [-a | -l | -h]
+	 * @param	exitStatus		Exit status information about the cli tool (eg: Exits 0 on success, > 1 if error)
+	 * @param	seeAlso			Any additional information that relates to the cli tool
+	 * @param	standards		Standards of compliance of the cli tool (eg: IEEE Std)
+	 * @param	history			History of the cli tool
+	 * @param	license			License under which the cli tool is registered
+	 * @param	creationDate	Creation date of the cli tool
+	 */
+	public void setCommandMetadata(String description, String name, String synopsis, String exitStatus, String seeAlso, String standards, String history, String license, String creationDate) {
+		this.description = description;
+		this.synopsis = synopsis;
+		this.exitStatus = exitStatus;
+		this.seeAlso = seeAlso;
+		this.standards = standards;
+		this.history = history;
+		this.license = license;
+		this.creationDate = creationDate;
 	}
 }
