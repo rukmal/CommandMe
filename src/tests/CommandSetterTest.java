@@ -56,4 +56,16 @@ public class CommandSetterTest {
 			}
 		}
 	}
+
+	/**
+	 * Test to ensure that command line metadata can be assigned successfully
+	 */
+	@Test
+	public void testMetadataAssignment() {
+		try {
+			testcmd.setCommandMetadata("Testing this description thing out", "testcmd - the test command", "this is a simple test command", "0 on success, > 0 if error", null, null, null, "MIT", "Jul 14 2014");
+		} catch (Exception e) {
+			Assert.fail();
+		}
+	}
 }
